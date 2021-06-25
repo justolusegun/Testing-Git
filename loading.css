@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 auto;
+  top: 200px;
+  position: relative;
+
+}
+
+
+.box{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  box-shadow: 10px 10px 20px black;
+  animation-name: load;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes load{
+  0%{background-color: red;}
+  10%{background-color: green;}
+  20%{background-color: yellow;}
+  30%{background-color: pink;}
+  40%{background-color: purple;}
+  50%{background-color: brown;}
+  60%{background-color: orange;}
+  70%{background-color: tomato;}
+  80%{background-color: blue;}
+  90%{background-color: black;}
+  100%{background: radial-gradient(blue, red);}
+  
+}
+
+.box2{
+  margin-left: 30px;
+}
+.box3{
+  margin-top: 30px;
+}
+.box4{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+h1{
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  animation-name: text;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes text{
+  0%{ color: red;}
+  10%{color: green;}
+  20%{color: yellow;}
+  30%{color: pink;}
+  40%{color: purple;}
+  50%{color: brown;}
+  60%{color: orange;}
+  70%{color: tomato;}
+  80%{color: blue;}
+  90%{color: black;}
+  100%{color: radial-gradient(blue, red);}
+}
